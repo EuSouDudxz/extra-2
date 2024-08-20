@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+</head>
+<body>
+    <script>
+    let anoNascimento = parseInt(prompt("Digite o ano de nascimento:"));
+        let anoAtual = new Date().getFullYear();
+        let idade = anoAtual - anoNascimento;
+        let mensagemVotacao = (idade >= 16) ? "Pode votar este ano." : "Não pode votar este ano.";
+
+        document.write(`<h3>Verificação de Votação</h3>`);
+        document.write(`<p>Idade: ${idade}</p>`);
+        document.write(`<p>${mensagemVotacao}</p>`);
+    </script>
+</body>
+</html>
